@@ -2,7 +2,8 @@ class UserManager { //User manager wordt gebruikt, om WebSockets in op te slaan.
 
     constructor(){//in de UserManager een array en een counter maken.
         this.users = [];
-        this.totalHits = 0
+        this.totalHits = 0;
+        this.resetCountUsers = new Set();
     }
 
     createUser(id){ 
